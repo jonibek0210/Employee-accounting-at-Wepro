@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/style.css">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <div class="wrapper wrapper__container">
+      <div class="block_info block_def">
+         <span>Учет сотрудников в компании Wepro</span>
+         <span>Опщее число сотрудников</span>
+         <span>Премтю получать: 2</span>
+      </div>
+
+      <div class="employee_level filter block_def">
+         <div class="block_filter">
+            <input type="text" placeholder="search" id="search">
+         </div>
+         <div class="level">
+            <div id="all">все сотрудники</div>
+            <div id="inpGetPromotion">На повышение</div>
+            <div id="salary">З/П больше 1000$</div>
+         </div>
+      </div>
+
+      <div class="employees block_def">
+         <!-- <div class="employee">
+            <div class="name">
+               <span>Latipov Jonibek</span>
+            </div>
+            <div class="salary">
+               <span>5000$</span>
+            </div>
+            <div class="control">
+               <div class="promotion">
+                  <img class="img" src="https://cdn1.iconfinder.com/data/icons/food-volume-ii/64/zcookie-128.png">
+               </div>
+               <div class="delete">
+                  <img class="img" src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/56-128.png">
+               </div>
+            </div>
+         </div> -->
+      </div>
+
+      <div class="post block_def">
+         <p>добавьте нового сотрудника</p>
+         <form name="form">
+            <input type="text" placeholder="как его зпвут?" name="name" id="name">
+            <input type="text" placeholder="З/П в $?" name="salary" id="name">
+            <button>добавить</button>
+         </form>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>

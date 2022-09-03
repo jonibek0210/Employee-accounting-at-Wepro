@@ -1,0 +1,185 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'PT Sans', sans-serif;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+/* ================================================ */
+
+[class*="__container"] {
+   max-width: 1300px;
+   height: 100%;
+   margin: 50px auto;
+   padding: 0 16px;
+}
+
+
+/* ================================================ */
+
+.wrapper {
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.block_def {
+   border-radius: 8px;
+   padding: 25px;
+   background-color: rgb(56, 73, 124);
+}
+
+.block_def:nth-child(3) {
+   background-color: #fff;
+   box-shadow: 0 0 10px grey;
+}
+
+.block_info {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.block_info span {
+   font-size: 35px;
+}
+
+.employee_level {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.block_filter input {
+   width: 100%;
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+}
+
+.level {
+   display: flex;
+   align-items: center;
+}
+
+.level div {
+   padding: 10px;
+   border: 1px solid #fff;
+   font-size: 18px;
+   transition: .3s ease;
+   cursor: pointer;
+}
+
+.level div:nth-child(1) {
+   border-radius: 5px 0 0 5px;
+   border-right: none;
+}
+
+.level div:last-child {
+   border-radius: 0 5px 5px 0;
+   border-left: none;
+}
+
+.level div:hover {
+   background-color: #FFf;
+   color: grey;
+}
+
+.employees {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.employee {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   color: #000;
+   font-size: 20px;
+   font-weight: 400;
+
+}
+
+.name {
+   width: 400px;
+}
+
+.salary {
+   display: flex;
+   justify-content: flex-end;
+   width: 400px;
+}
+
+.control {
+   width: 200px;
+   display: flex;
+   justify-content: flex-end;
+   gap: 15px;
+}
+
+.img {
+   width: 30px;
+   cursor: pointer;
+}
+
+.delete,
+.promotion {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(225, 225, 225);
+   padding: 8px;
+   border-radius: 3px;
+}
+
+.post {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.post p {
+   font-size: 25px;
+   font-weight: 400;
+}
+
+form {
+   display: flex;
+   gap: 20px;
+}
+
+form input {
+   width: 35%;
+   border: none;
+   border-radius: 3px;
+   padding: 10px 20px;
+   outline: none;
+}
+
+form button {
+   background-color: transparent;
+   color: #fff;
+   border: 1px solid #fff;
+   font-weight: 400;
+   letter-spacing: 2px;
+   border-radius: 3px;
+   padding: 5px 10px;
+}
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
